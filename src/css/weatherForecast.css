@@ -1,0 +1,198 @@
+.weather-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.label {
+  margin-left: 5px;
+}
+
+hr {
+  border: 1px solid #e0e0e0;
+  margin: 0 5px 10px 5px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-temp-desc {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1em;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-left: -60px;
+}
+
+.temp-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.temp {
+  font-size: 3em;
+}
+
+.desc {
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+.details {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+.today-temp {
+  font-size: 1em;
+  margin-bottom: 5px;
+  margin-right: -20px;
+}
+
+.rain-mise {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.rain-mise div {
+  margin: 0 5px;
+}
+
+/* Add these styles */
+.rain-mise {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rain-prob,
+.air {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rain-prob span,
+.air span {
+  margin-left: 5px;
+  white-space: nowrap; /* Prevent line breaks within the span */
+}
+
+.hourly-box {
+  background-color: #e9e9e9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hourly-forecast {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 280px;
+  height: 170px;
+}
+
+.hour {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hour-icon {
+  font-size: 2em;
+  margin-bottom: 3px;
+}
+
+.hour-temp {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  text-align: center;
+}
+
+.time {
+  margin-top: 10px;
+}
+
+.weekly-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weekly-forecast .day {
+  text-align: center;
+  width: 12%;
+  background-color: #fff9f9;
+  padding: 10px;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.day-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.day-temp {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.more-look {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;     
+}
+
+.air .grade {
+  display: inline;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.middle-section {
+  flex-flow: row nowrap;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+}

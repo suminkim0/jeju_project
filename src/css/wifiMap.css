@@ -1,0 +1,40 @@
+.title{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  height: 50px;
+}
+
+.jeju-logo{
+  width: 150px;
+}
+
+table{
+  width: 1000px;
+  border-collapse: collapse;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+th, td{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:hover{
+  background-color: initial;
+}
+
+.col{
+  background-color: #ffaf53;
+  color: black;
+}
+
+#map{
+  margin-left: 20px;
+}
+

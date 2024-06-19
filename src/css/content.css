@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .logo {
+    left: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  header h2 {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  nav.tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .btn{
+    color: rgb(95, 95, 95);
+  }
+
+  .btn:hover {
+    background-color: #84C4FF;
+    color: white;
+  }
+  
+  nav.tabs button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px 70px;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .myth-container, .history-container, .folk-container, .samdado-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .main-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .myth-images, .history-images, .folk-images, .samdado-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .myth-image, .history-image, .folk-small-image, .samdado-image {
+    width: 30%;
+    height: auto;
+  }
+  
+  .folk-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .folk-content, .samdado-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .myth-article, .history-article, .folk-article, .samdado-article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .myth-article h2, .history-article h2, .folk-article h2, .samdado-article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .myth-article p, .history-article p, .folk-article p, .samdado-article p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  table {
+    flex: row;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: white;
+  }
+  
+  .search_bar {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search_bar input, .search_bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .search_bar input {
+    margin-right: 10px;
+    width: calc(100% - 500px);
+    border: 1px solid gainsboro;
+  }
+  
+  .search_bar button {
+    background-color: #84C4FF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search_bar .write_btn {
+    background-color: #84C4FF;
+  }

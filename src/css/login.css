@@ -1,0 +1,68 @@
+.login-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 60px !important;
+}
+
+.login-form {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important; /* 아이템을 가운데 정렬 */
+  width: 100% !important; /* 전체 너비 */
+  max-width: 460px !important; /* 큰 화면에서의 최대 너비 */
+  gap: 20px !important; /* 일정한 간격 */
+  text-align: center !important; /* 텍스트를 가운데 정렬 */
+}
+
+.login-form > input {
+  width: 100% !important; /* 전체 너비 */
+  height: 50px !important;
+  font-size: 20px !important;
+  margin: 0 !important;
+  padding: 0 20px !important; /* 일정한 패딩 */
+  box-sizing: border-box !important;
+  border: 2px solid #BBBBBB !important;
+  border-radius: 10px !important; /* 일정한 테두리 반경 */
+}
+
+/* 버튼 컨테이너 스타일 */
+.btns {
+  display: flex !important;
+  width: 100% !important; /* 전체 너비 */
+  gap: 10px !important; /* 일정한 간격 */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.btns > button {
+  flex: 1 !important;
+  height: 50px !important;
+  border: none !important;
+  border-radius: 10px !important; /* 일정한 테두리 반경 */
+  font-size: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.login-btn {
+  background-color: #f89422 !important;
+}
+
+.login-btn:hover {
+  background-color: #ffc889 !important;
+}
+
+.register-btn {
+  background-color: #f5cb57 !important;
+}
+
+.register-btn:hover {
+  background-color: #f7d988 !important;
+}
+
+.welcome-message {
+  margin-bottom: 20px !important;
+  font-size: 18px !important;
+  color: green !important;
+}

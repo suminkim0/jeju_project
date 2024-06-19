@@ -1,0 +1,31 @@
+.user-greeting {
+    position: absolute;
+    top: 150px; /* 세로 위치 조정 */
+    right: 20px !important; /* 가로 위치 조정 */
+    background-color: rgba(255, 255, 255, 0.7); /* 배경색과 투명도 설정 */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* 다른 요소들 위에 배치 */
+    max-width: 300px !important; /* 최대 너비 설정 */
+  }
+  
+  .user-greeting>span {
+    font-size: 15px;
+  }
+  
+  .user-greeting>button {
+    width: 100px;
+    margin-left: 10px;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgb(88, 88, 88);
+  }
+  
+  .user-greeting>button:hover {
+    width: 100px;
+    margin-left: 10px;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgb(214, 214, 214);
+  }
+  

@@ -1,0 +1,47 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.mySlides {
+  width: 100vw; /* 화면의 너비를 100%로 설정 */
+  height: 100vh; /* 화면의 높이를 100%로 설정 */
+  object-fit: cover; /* 이미지가 컨테이너를 꽉 채우도록 설정 */
+  position: absolute; /* 절대 위치로 설정 */
+  top: -50px; /* 네비게이션 바 높이만큼 위로 위치 조정 */
+  left: 0;
+  opacity: 0; /* 초기 투명도 설정 */
+  transition: opacity 1s ease-in-out; /* 자연스러운 전환 효과 추가 */
+}
+
+.mySlides.active {
+  opacity: 1; /* 활성화된 슬라이드는 불투명 */
+  z-index: 1; /* 활성화된 슬라이드는 앞에 배치 */
+}
+
+.mySlides.inactive {
+  opacity: 0; /* 비활성화된 슬라이드는 투명 */
+  z-index: 0; /* 비활성화된 슬라이드는 뒤에 배치 */
+}
+
+.img-container {
+  position: relative; /* 상대 위치로 설정 */
+  width: 100vw; /* 화면의 너비를 100%로 설정 */
+  height: calc(100vh + 50px); /* 네비게이션 바 높이를 포함하여 화면의 높이를 100%로 설정 */
+  overflow: hidden;
+}
+
+

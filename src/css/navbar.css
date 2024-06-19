@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box; /* 모든 요소에 적용 */
+}
+
+.navbar {
+  background-color: rgba(46, 46, 46, 0.7); /* 투명도 70% 적용 */
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  position: fixed; /* 화면 상단에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 다른 요소들 위에 배치 */
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: font-size 0.3s ease; /* 크기 변경 시 애니메이션 적용 */
+  line-height: 1.5; /* 라인 높이 설정 */
+  min-height: 50px; /* 최소 높이 설정 */
+  max-height: 50px; /* 최대 높이 설정 */
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(46, 46, 46, 0.7); /* 투명도 70% 적용 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 50px; /* 네비바 아래에 위치하도록 설정 */
+  width: 200px; /* 서브메뉴 너비를 넓게 설정 */
+  left: 0; /* 서브메뉴를 네비게이션 바의 왼쪽에 맞춤 */
+}
+
+.submenu.visible {
+  display: block;
+}
+
+.submenu li {
+  width: 100%;
+}
+
+.nav-sublink {
+  display: block;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-align: left;
+  transition: background-color 0.3s ease; /* 배경색 변경 시 애니메이션 적용 */
+}
+
+.nav-sublink:hover {
+  background-color: rgba(87, 87, 87, 0.7); /* 서브링크 호버 시 배경색 */
+}
+
+.nav-item:hover .submenu {
+  display: block;
+}
