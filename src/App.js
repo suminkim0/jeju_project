@@ -1,11 +1,10 @@
 import React from "react";
-import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Register from "./components/Register";
 import MapContainer from "./components/MapContainer";
 import OpenWifiAxios from "./components/OpenWifiAxios";
 import WifiMap from './components/WifiMap';
 import NavBar from './components/NavBar';
-import logo from './img/logo.png';
 import WeatherForecast from "./components/WeatherForecast";
 import BusStationInfo from "./components/BusStationInfo";
 import Content from "./components/Content";
@@ -18,7 +17,6 @@ import UserGreeting from "./components/UserGreeting";
 import Oreum from "./components/Oreum";
 
 function App() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   return (
@@ -36,7 +34,6 @@ function App() {
             <Route path="/bus" element={<BusStationInfo />} />
             <Route path="/content" element={<Content />} />
             <Route path="/" element={<Main />} />
-            <Route path="/mypage/login" element={<Login />} />
             <Route path="/busMap" element={<BusStationMap />} />
             <Route path="/oreum" element={<Oreum />} />
           </Routes>

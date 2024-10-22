@@ -41,15 +41,6 @@ const NavBar = () => {
       <div className="nav-item">
         <Link to="/oreum" className="nav-link">오름 지도</Link>
       </div>
-      <div className="nav-item"
-           onMouseOver={handleMouseOver}
-           onMouseOut={handleMouseOut}>
-        <Link className="nav-link">마이페이지</Link>
-        <ul className={`submenu ${submenuVisible ? 'visible' : ''}`}>
-          <li><Link to="/mypage/login" className="nav-sublink">로그인</Link></li>
-          <li><Link to="/register" className="nav-sublink">회원가입</Link></li>
-        </ul>
-      </div>
     </nav>
   );
 };
