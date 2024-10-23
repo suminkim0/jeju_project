@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import './../css/wifiMap.css';
-import logo from './../img/logo.png';
 
 export default function WifiMap() {
   const location = useLocation(); // 현재 위치에서 상태를 가져옴

@@ -4,7 +4,6 @@ import axios from 'axios';
 import './../css/weatherForecast.css';
 import logo_sunny from '../img/sunny.png';
 import logo_cloudy from '../img/cloudy.png';
-import logo from './../img/logo.png';
 
 // 날짜를 'YYYYMMDD' 형식으로 반환하는 함수
 function getFormattedDate(offset) {

@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './../css/openWifiAxios.css';
-import logo from './../img/logo.png';
 
 // 매월 1일을 YYYYMMDD 형식으로 변환하는 함수
 function getFirstDayOfMonth() {

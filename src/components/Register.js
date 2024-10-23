@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './../css/register.css';
-import logo from './../img/logo.png';
 
 const Register = () => {
   const [id, setId] = useState('');
@@ -36,7 +35,6 @@ const Register = () => {
 
   return (
     <div className='register-container'>
-      <img src={logo} alt='Jeju Logo' className='register-logo' />
       <h2 className='register-title'>회원 가입 페이지</h2>
       <form onSubmit={handleSubmit} className='register-form'>
         <div className='input_container'>

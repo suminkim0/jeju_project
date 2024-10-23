@@ -1,28 +1,15 @@
-* {
-  box-sizing: border-box; /* 모든 요소에 적용 */
-}
-
 .navbar {
-  background-color: rgba(46, 46, 46, 0.7); /* 투명도 70% 적용 */
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 15px;
-  position: fixed; /* 화면 상단에 고정 */
-  top: 0;
-  left: 0;
-  width: 100%;
+  font-size: 18px;
   z-index: 1000; /* 다른 요소들 위에 배치 */
 }
 
-.nav-item {
-  position: relative;
-}
-
-.nav-link {
+.nav_link {
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,10 +19,11 @@
   max-height: 50px; /* 최대 높이 설정 */
 }
 
-.nav-link:hover {
+.nav_link:hover {
   font-weight: bold;
   font-size: 20px;
-  color: white;
+  font-weight: bold;
+  color: rgb(255, 153, 0);
 }
 
 .submenu {
@@ -58,7 +46,7 @@
   width: 100%;
 }
 
-.nav-sublink {
+.nav_sublink {
   display: block;
   color: white;
   padding: 10px 16px;
@@ -67,10 +55,15 @@
   transition: background-color 0.3s ease; /* 배경색 변경 시 애니메이션 적용 */
 }
 
-.nav-sublink:hover {
+.nav_sublink:hover {
   background-color: rgba(87, 87, 87, 0.7); /* 서브링크 호버 시 배경색 */
 }
 
-.nav-item:hover .submenu {
+.nav_item:hover .submenu {
   display: block;
+}
+
+.logo{
+  width: 100px;
+  display: flex;
 }
