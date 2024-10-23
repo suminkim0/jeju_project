@@ -8,12 +8,10 @@ import NavBar from './components/NavBar';
 import WeatherForecast from "./components/WeatherForecast";
 import BusStationInfo from "./components/BusStationInfo";
 import Content from "./components/Content";
-import Login from "./components/Login";
 import './App.css';
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import BusStationMap from "./components/BusStationMap";
-import UserGreeting from "./components/UserGreeting";
 import Oreum from "./components/Oreum";
 
 function App() {
@@ -22,7 +20,6 @@ function App() {
   return (
     <div className="app-container">
       <NavBar className="navbar" />
-      <UserGreeting />
       <div className={`main-content ${location.pathname === '/' ? 'no-margin' : ''}`}>
         <div className="main-container">
           <Routes>

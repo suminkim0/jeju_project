@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color : rgb(39, 39, 39);
+  color: rgb(219, 219, 219);
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+.column1{
+  text-align: left;
+}
+
+.column2{
+  text-align: right;
+}
