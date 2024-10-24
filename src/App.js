@@ -13,6 +13,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import BusStationMap from "./components/BusStationMap";
 import Oreum from "./components/Oreum";
+import MainNext from "./components/MainNext";
 
 function App() {
   const location = useLocation();
@@ -30,7 +31,8 @@ function App() {
             <Route path="/weatherForecast" element={<WeatherForecast />} />
             <Route path="/bus" element={<BusStationInfo />} />
             <Route path="/content" element={<Content />} />
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Main/>} />
+            <Route path="/next" element={<MainNext />} />
             <Route path="/busMap" element={<BusStationMap />} />
             <Route path="/oreum" element={<Oreum />} />
           </Routes>
