@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import BusStationMap from "./components/BusStationMap";
 import Oreum from "./components/Oreum";
 import MainNext from "./components/MainNext";
+import Restaurant from "./components/Resturant";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
     { path: "/next", element: <MainNext /> },
     { path: "/busMap", element: <BusStationMap /> },
     { path: "/oreum", element: <Oreum /> },
+    { path: "/restaurant", element: <Restaurant /> },
   ];
 
   return (

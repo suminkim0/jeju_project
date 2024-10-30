@@ -3,7 +3,7 @@ import styles from './../css/mainNext.module.css';
 
 export default function MainNext() {
   const location = useLocation();
-  const { where } = location.state || { where: '' };
+  const { where, locationData } = location.state || { where: '' };
   const navigate = useNavigate(); // useNavigate 훅 사용
 
   // 버튼 데이터 배열
@@ -18,7 +18,7 @@ export default function MainNext() {
 
   // 버튼 클릭 핸들러
   const handleButtonClick = (path) => {
-    navigate(path, { state: { where } }); // 해당 경로로 이동
+    navigate(path, { state: { where, locationData } }); // 해당 경로로 이동
   };
 
   return (

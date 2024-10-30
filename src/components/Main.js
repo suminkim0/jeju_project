@@ -4,10 +4,40 @@ import { Link } from 'react-router-dom';
 
 export default function Main() {
 
-  const [where, setWhere] = useState('');
+  const [where, setWhere] = useState([]);
+  const [locationData, setLocationData] = useState(null); // API 응답 데이터를 저장할 상태
 
-  const handleSelectChange = (e)=>{
-    setWhere(e.target.value);
+  const handleSelectChange = async (e) => {
+    const selectedValue = e.target.value;
+    setWhere(selectedValue);
+
+    // API 호출을 위한 함수 정의
+    if (selectedValue) {
+      await fetchLocationData(selectedValue); // 선택된 값으로 API 호출
+    } else {
+      setLocationData(null); // 선택값이 없을 경우 데이터 초기화
+    }
+  };
+
+  // API 호출 함수
+  const fetchLocationData = async (location) => {
+    try {
+      const response = await fetch(`https://dapi.kakao.com/v2/local/search/address.json?query=${encodeURIComponent(location)}`, {
+        headers: {
+          Authorization: `KakaoAK ${process.env.REACT_APP_KAKAO_REST_API_KEY}`, // 환경 변수 확인
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      setLocationData(data.documents[0]); // API 응답 데이터를 상태에 저장
+      
+    } catch (error) {
+      console.error('API 호출 중 오류 발생:', error);
+    }
   };
 
   return (
@@ -36,7 +66,7 @@ export default function Main() {
         {where ? (
           <Link 
             to="/next" 
-            state={{ where }} // state에 where 값 전달
+            state={{ where, locationData }} // state에 where, locationData 값 전달
           >
             <button className={styles.searchBtn}>GO</button>
           </Link>
