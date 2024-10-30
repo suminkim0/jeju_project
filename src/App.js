@@ -18,27 +18,33 @@ import MainNext from "./components/MainNext";
 function App() {
   const location = useLocation();
 
+  const routes = [
+    { path: "/register", element: <Register /> },
+    { path: "/map", element: <MapContainer /> },
+    { path: "/wifi", element: <OpenWifiAxios /> },
+    { path: "/wifiMap", element: <WifiMap /> },
+    { path: "/weatherForecast", element: <WeatherForecast /> },
+    { path: "/bus", element: <BusStationInfo /> },
+    { path: "/content", element: <Content /> },
+    { path: "/", element: <Main /> },
+    { path: "/next", element: <MainNext /> },
+    { path: "/busMap", element: <BusStationMap /> },
+    { path: "/oreum", element: <Oreum /> },
+  ];
+
   return (
     <div className="app-container">
       <NavBar className="navbar" />
       <div className={`main-content ${location.pathname === '/' ? 'no-margin' : ''}`}>
         <div className="main-container">
           <Routes>
-            <Route path="/register" element={<Register />} />
-            <Route path="/map" element={<MapContainer />} />
-            <Route path="/wifi" element={<OpenWifiAxios />} />
-            <Route path="/wifiMap" element={<WifiMap />} />
-            <Route path="/weatherForecast" element={<WeatherForecast />} />
-            <Route path="/bus" element={<BusStationInfo />} />
-            <Route path="/content" element={<Content />} />
-            <Route path="/" element={<Main/>} />
-            <Route path="/next" element={<MainNext />} />
-            <Route path="/busMap" element={<BusStationMap />} />
-            <Route path="/oreum" element={<Oreum />} />
+            {routes.map(route => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
           </Routes>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
